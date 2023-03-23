@@ -1,0 +1,4 @@
+FROM openjdk:11-jdk-alpine
+EXPOSE 8082
+ADD target/gestion_projet-1.0.jar gestion_projet-1.0.jar
+ENTRYPOINT ["java","-jar","/gestion_projet-1.0.jar"]
